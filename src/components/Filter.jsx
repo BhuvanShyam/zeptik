@@ -1,4 +1,4 @@
-// src/components/Filter.js
+
 import React, { useState } from 'react';
 
 function Filter({ closeFilter, applyFilter }) {
@@ -18,8 +18,8 @@ function Filter({ closeFilter, applyFilter }) {
   };
 
   const handleApplyFilter = () => {
-    applyFilter({ categories: selectedCategories, brands: selectedBrands }); // Pass selected filters to parent
-    closeFilter(); // Close the filter modal after applying
+    applyFilter({ categories: selectedCategories, brands: selectedBrands }); 
+    closeFilter(); 
   };
 
   const handleClearFilters = () => {
@@ -32,7 +32,7 @@ function Filter({ closeFilter, applyFilter }) {
       <div className="bg-white p-6 rounded-lg shadow-lg w-11/12 md:w-1/2">
         <h2 className="text-xl font-semibold mb-4">Filters</h2>
         
-        {/* Categories */}
+
         <div className="mb-4">
           <h3 className="font-medium mb-2">Categories</h3>
           <div className="space-y-2">
@@ -51,7 +51,7 @@ function Filter({ closeFilter, applyFilter }) {
           </div>
         </div>
 
-        {/* Brands */}
+      
         <div className="mb-4">
           <h3 className="font-medium mb-2">Brands</h3>
           <div className="space-y-2">

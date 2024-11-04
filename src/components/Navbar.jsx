@@ -5,27 +5,26 @@ import { Link, useNavigate } from "react-router-dom";
 function Navbar({ onSearch }) {
   const cartItems = useSelector((state) => state.cart.items);
   const navigate = useNavigate();
-  const [searchTerm, setSearchTerm] = useState(""); // State for search input
-
+  const [searchTerm, setSearchTerm] = useState(""); 
   const handleSearchChange = (e) => {
-    setSearchTerm(e.target.value); // Update search term state
+    setSearchTerm(e.target.value); 
   };
 
   const handleSearchSubmit = () => {
     if (searchTerm.trim()) {
-      onSearch(searchTerm); // Call the onSearch function with the current search term
-      setSearchTerm(""); // Clear the search input after submission
+      onSearch(searchTerm); 
+      setSearchTerm(""); 
     }
   };
 
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
-      handleSearchSubmit(); // Trigger search on Enter key press
+      handleSearchSubmit(); 
     }
   };
 
   const openCart = () => {
-    navigate("/cart"); // Navigate to the cart page
+    navigate("/cart"); 
   };
 
   return (
@@ -50,7 +49,7 @@ function Navbar({ onSearch }) {
             className="w-full max-w-md p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           <button
-            onClick={handleSearchSubmit} // Call search on button click
+            onClick={handleSearchSubmit} 
             className="ml-2 p-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-200"
           >
             Search

@@ -1,4 +1,4 @@
-// src/components/Checkout.js
+
 import React from "react";
 import { motion } from "framer-motion";
 

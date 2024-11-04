@@ -1,4 +1,4 @@
-// src/components/ProductCard.js
+
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../actions/cartActions";
@@ -18,7 +18,7 @@ function ProductCard({ product }) {
     }, 2000);
   };
 
-  // Check if the product is already in the cart
+
   const isInCart = cartItems.some((item) => item.id === product.id);
 
   return (

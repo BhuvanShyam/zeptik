@@ -1,12 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom'; // Update this import
+import { useNavigate } from 'react-router-dom'; 
 
 const Home = () => {
   const navigate = useNavigate();
 
   const handleShowProducts = () => {
-    navigate('/products'); // Use navigate for redirection
+    navigate('/products'); 
   };
 
   return (

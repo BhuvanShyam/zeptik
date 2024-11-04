@@ -53,7 +53,7 @@ const productsData = [
 ];
 
 function ProductList({ filteredProducts }) {
-  // Use filteredProducts if provided; otherwise, fallback to static products
+  
   const productsToDisplay =
     filteredProducts.length > 0 ? filteredProducts : productsData;
 

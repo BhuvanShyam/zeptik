@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 import Cart from "./components/Cart";
 import Filter from "./components/Filter";
 import Checkout from "./components/Checkout";
-import Footer from "./components/Footer"; // Import the Footer component
+import Footer from "./components/Footer";
 
 function App() {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
@@ -119,7 +119,7 @@ function App() {
           <Route path="/cart" element={<Cart cartItems={cartItems} />} />
           <Route path="/checkout" element={<Checkout />} />
         </Routes>
-        <Footer /> {/* Footer added at the bottom of the App */}
+        <Footer /> 
       </div>
     </Router>
   );
